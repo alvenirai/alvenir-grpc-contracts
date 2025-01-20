@@ -1,6 +1,6 @@
-.PHONY: build
+.PHONY: generate build push
 
-build:
+generate:
 	python -m grpc_tools.protoc \
 		--proto_path=./protos \
 		--python_out=./src \
@@ -11,3 +11,9 @@ build:
 		protos/alvenir_grpc_contracts/guidance/v1/*.proto \
 		protos/alvenir_grpc_contracts/summary/v1/*.proto \
 		protos/alvenir_grpc_contracts/types/v1/*.proto
+
+build:
+	python3 -m build
+
+push:
+	python3 -m twine upload dist/*

@@ -24,3 +24,7 @@ build-backend = "hatchling.build"
 dev = [
   "grpcio-tools>=1.59.0",
 ]
+
+[project.urls]
+Homepage = "https://github.com/alvenirai/alvenir-grpc-contracts"
+Issues = "https://github.com/alvenirai/alvenir-grpc-contracts/issues"
