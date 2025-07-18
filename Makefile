@@ -1,7 +1,12 @@
 .PHONY: generate build push
 
+ifneq (,$(wildcard ./.env))
+	include ./.env
+	export
+endif
+
 generate:
-	python -m grpc_tools.protoc \
+	uv run -m grpc_tools.protoc \
 		--proto_path=./protos \
 		--python_out=./src \
 		--grpc_python_out=./src \
@@ -13,7 +18,7 @@ generate:
 		protos/alvenir_grpc_contracts/types/v1/*.proto
 
 build:
-	python3 -m build
+	uv build
 
-push:
-	python3 -m twine upload dist/*
+publish:
+	uv publish --token

@@ -5,7 +5,7 @@ import warnings
 
 from alvenir_grpc_contracts.summary.v1 import analytics_pb2 as alvenir__grpc__contracts_dot_summary_dot_v1_dot_analytics__pb2
 
-GRPC_GENERATED_VERSION = '1.69.0'
+GRPC_GENERATED_VERSION = '1.73.1'
 GRPC_VERSION = grpc.__version__
 _version_not_supported = False
 

@@ -3,7 +3,8 @@ from alvenir_grpc_contracts.types.v1 import status_pb2 as _status_pb2
 from alvenir_grpc_contracts.types.v1 import ping_pb2 as _ping_pb2
 from google.protobuf import descriptor as _descriptor
 from google.protobuf import message as _message
-from typing import ClassVar as _ClassVar, Mapping as _Mapping, Optional as _Optional, Union as _Union
+from collections.abc import Mapping as _Mapping
+from typing import ClassVar as _ClassVar, Optional as _Optional, Union as _Union
 
 DESCRIPTOR: _descriptor.FileDescriptor
 

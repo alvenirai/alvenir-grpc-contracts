@@ -6,7 +6,7 @@ import warnings
 from alvenir_grpc_contracts.summary.v1 import summary_pb2 as alvenir__grpc__contracts_dot_summary_dot_v1_dot_summary__pb2
 from alvenir_grpc_contracts.types.v1 import ping_pb2 as alvenir__grpc__contracts_dot_types_dot_v1_dot_ping__pb2
 
-GRPC_GENERATED_VERSION = '1.69.0'
+GRPC_GENERATED_VERSION = '1.73.1'
 GRPC_VERSION = grpc.__version__
 _version_not_supported = False
 
